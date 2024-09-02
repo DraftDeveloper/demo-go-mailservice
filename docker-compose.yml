@@ -5,6 +5,8 @@ services:
     build:
       context: .
       dockerfile: dockerfile
+    ports:
+      - "8080:8080"
     restart: always
     deploy:
       mode: replicated
@@ -24,3 +26,4 @@ services:
     ports:
       - "1025:1025"
       - "8025:8025"
+
